@@ -1,0 +1,63 @@
+/* Style for the admin panel */
+.vdomi-container3 {
+  display: flex;
+  justify-content: center;
+}
+
+#post-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+#post-list .list-item {
+  background-color: #f9f9f9;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px; /* Double the font size */
+}
+
+.content {
+  width: 600px; /* Fixed width for content block */
+  margin: 0 auto; /* Center the content block horizontally */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  word-wrap: break-word; /* Ensures long words break to fit inside the container */
+  overflow: hidden; /* Prevents overflow of content */
+}
+
+.content span {
+  text-align: left;
+  display: block;
+
+  margin: 10px 0;
+}
+
+#post-list .list-item img {
+  max-width: 600px; /* Double the width */
+  max-height: 600px; /* Double the height */
+  margin: 10px auto; /* Center the image horizontally */
+  display: block; /* Ensure image is a block element for centering */
+}
+
+#post-list .list-item form {
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+#post-list .list-item button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#post-list .list-item button:hover {
+  background-color: #ff4c4c;
+}

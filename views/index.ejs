@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!--Naslov i logo-->
+    <link rel="icon" type="image/png" href="public/Images/paw.png">
+    <title>MileniciMK</title>
+
+    <meta property="og:title" content="Standard Limited Sheep" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html { line-height: 1.15; }
+      body { margin: 0; }
+      * { box-sizing: border-box; border-width: 0; border-style: solid; }
+      p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption { margin: 0; padding: 0; }
+      button { background-color: transparent; }
+      button, input, optgroup, select, textarea { font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0; }
+      button, select { text-transform: none; }
+      button, [type="button"], [type="reset"], [type="submit"] { 
+      -webkit-appearance: button; 
+      appearance: button; 
+      }
+      button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+      button:-moz-focus, [type="button"]:-moz-focus, [type="reset"]:-moz-focus, [type="submit"]:-moz-focus { outline: 1px dotted ButtonText; }
+      a { color: inherit; text-decoration: inherit; }
+      input { padding: 2px 4px; }
+      img { display: block; }
+      html { scroll-behavior: smooth; }
+    </style>
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/animate.css@4.1.1/animate.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        data-tag="font"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+        data-tag="font"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        data-tag="font"
+      />
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+      />
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+        <link rel="stylesheet" href="public/css/index.css" />
+        <link href="public/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+
+      <div class="home-container">
+
+        <!-- Start of Header-->
+        <%- include('header') %>
+        <!--End of Header-->
+
+        <!--Start Prv del Vdomi mileniche-->
+        <div class="thq-section-padding">
+          <div class="hero1-max-width thq-section-max-width">
+            <div class="thq-flex-row hero1-container">
+              <div class="hero1-column">
+                <div class="hero1-content">
+                  <h1 class="thq-heading-1 hero1-heading1">
+                    <span>Вдомете милениче</span>
+                  </h1>
+                  <p class="thq-body-large hero1-content1">
+                    <span>
+                      Разгледувајте огласи од миленици на кои им треба дом.
+                      Воспоставете контакт со личноста и вдомете милениче
+                    </span>
+                  </p>
+                </div>
+                <div class="hero1-actions">
+                  <a href="/vdomi">
+                    <button class="thq-button-filled hero1-button">
+                        <span class="thq-body-small"><span>Вдоми</span></span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="hero1-container1">
+                <img
+                  alt="CatImg"
+                  src="public/Images/cat1.png"
+                  class="hero1-image1 "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Prv del Vdomi mileniche-->
+
+        <!--Start Vtor del Kreiraj oglas-->
+        <div class="hero8-header26 thq-section-padding">
+          <div class="hero8-max-width thq-section-max-width thq-flex-column">
+            <div class="hero8-column">
+              <div class="hero8-content">
+                <h1 class="hero8-text thq-heading-1">
+                  <span>Креирајте оглас</span>
+                </h1>
+                <p class="hero8-text1 thq-body-large">
+                  <span>
+                    Имате милениче кое сакате да биди вдомено? Најдовте
+                    животинче на улица на кое му е потребно дом? Креирајте оглас
+                    и известете ги сите
+                  </span>
+                </p>
+                <div class="hero8-actions">
+                  <a href="/oglas">
+                    <button class="thq-button-filled hero8-button">
+                      <span class="thq-body-small"><span>Оглас</span></span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img
+              alt="AllPets"
+              src="public/Images/pets.png"
+              class="thq-img-ratio-16-9"
+            />
+          </div>
+        </div>
+        <!--End Vtor del Kreiraj oglas-->
+
+        <!--Start Tret del Za nas-->
+        <div class="thq-section-padding">
+          <div class="hero11-max-width thq-section-max-width">
+            <div class="thq-flex-row hero11-container">
+              <div class="hero11-column">
+                <div class="hero11-content">
+                  <h1 class="thq-heading-1 hero11-heading1">
+                    <span>За нас</span>
+                  </h1>
+                  <p class="thq-body-large hero11-content1">
+                    <span>
+                      Нашата веб страница е наменета за вдомување на миленици.
+                      Оваа веб страница нема никаква намера на профитирање врз
+                      милениците.Ве молиме не ја злоупотребувајте веб страната!!
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="hero11-container1">
+                <img
+                  alt="Слика на миленици"
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  class="hero11-image1 thq-img-ratio-4-3"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="thq-section-padding">
+            <div class="hero6-max-width thq-flex-row thq-section-max-width">
+              <img
+                alt="MobApp"
+                src="Images/mobapp1.jpg"
+                class="hero6-hero-image thq-img-ratio-4-3"
+              />
+              <div class="hero6-column">
+                <div class="hero6-content">
+                  <p class="thq-body-large hero6-text">
+                    <span>
+                      Разгледајте ја нашата мобилна апликација. Наменета за
+                      уличните кучиња во Битола. Можете да ја превземите Demo
+                      верзијата од нашата мобилна апликација
+                    </span>
+                  </p>
+                  <div class="hero6-actions">
+                    <a href="/za-nas">
+                      <button class="thq-button-filled hero6-button">
+                        <span class="thq-body-small"><span>За нас</span></span>
+                      </button>
+                    </a>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Tret del Za nas-->
+
+        <!--Start Chetvrt del Pridruzini se-->
+        <div class="hero81-header26 thq-section-padding">
+          <div class="hero81-max-width thq-section-max-width thq-flex-column">
+            <div class="hero81-column">
+              <div class="hero81-content">
+                <h1 class="hero81-text thq-heading-1">
+                  <span>Придружете ни се</span>
+                </h1>
+                <p class="hero81-text1 thq-body-large">
+                  <span>
+                    Придружете ни се на нашата веб страна, објавате оглас за
+                    вдомување милениче или вдомете милениче, поставете прашање
+                    или поставате одговор на некое прашање
+                  </span>
+                </p>
+                <div class="hero81-actions">
+                  <a href="/login">
+                    <button class="thq-button-filled hero81-button">
+                      <span class="thq-body-small"><span>Најави се</span></span>
+                    </button>
+                  </a>
+                  <a href="/register">
+                    <button class="thq-button-outline hero81-button1">
+                      <span class="thq-body-small">
+                        <span>Регистритај се</span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Chetvrd del Pridruzi ni se-->
+
+        <!--Start Footer-->
+        <%- include('footer') %>
+        <!--End Footer-->
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+.oglas-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-form4-contact9 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-form4-content {
+  gap: 0;
+  flex: 1;
+  align-items: stretch;
+}
+.contact-form4-section-title {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contact-form4-content1 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contact-form4-text {
+  align-self: center;
+}
+.contact-form4-text01 {
+  align-self: center;
+}
+.contact-form4-input {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+}
+.contact-form4-text02 {
+  align-self: center;
+}
+.contact-form4-text-input {
+  width: 372px;
+  height: 52px;
+  align-self: center;
+}
+.contact-form4-input1 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+}
+.contact-form4-text03 {
+  align-self: center;
+}
+.contact-form4-text-input1 {
+  width: 372px;
+  height: 52px;
+  align-self: center;
+}
+.contact-form4-input2 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+}
+.contact-form4-text06 {
+  align-self: center;
+}
+.contact-form4-text-input2 {
+  width: 372px;
+  height: 52px;
+  align-self: center;
+}
+.contact-form4-text09 {
+  align-self: center;
+}
+.contact-form4-select {
+  width: var(--dl-size-size-large);
+  height: var(--dl-size-size-small);
+  align-self: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+}
+.contact-form4-container {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-form4-text12 {
+  align-self: center;
+  text-align: center;
+}
+.contact-form4-textarea {
+  width: 655px;
+  height: 199px;
+  align-self: center;
+}
+.contact-form4-image {
+  width: 502px;
+  height: 326px;
+  align-self: center;
+  object-fit: cover;
+}
+.contact-form4-button {
+  align-self: center;
+}
+@media(max-width: 991px) {
+  .contact-form4-max-width {
+    flex-direction: column;
+  }
+  .contact-form4-content {
+    width: 100%;
+  }
+}
