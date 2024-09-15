@@ -5,7 +5,6 @@
     <link rel="icon" type="image/png" href="/public/Images/paw.png">
     <title>Najava</title>
 
-    <meta property="og:title" content="Login - Standard Limited Sheep" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
 
@@ -32,15 +31,6 @@
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
-    <style>
-      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
-          display: flex;
-        }
-
-        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
-          transform: rotate(90deg);
-        }
-    </style>
           <link href="public/css/login.css" rel="stylesheet" />
           <link rel="stylesheet" href="public/css/style.css" />
           <link rel="stylesheet" href="public/css/footer.css" />
@@ -51,9 +41,8 @@
 
       <div class="home-container">
 
-        <!-- Start of Header-->
+        <!-- Header -->
         <%- include('header') %>
-        <!--End of Header-->
 
         <div class="sign-in1-container thq-section-padding">
           <div class="sign-in1-max-width thq-section-max-width">
@@ -69,6 +58,7 @@
                   <div class="sign-in1-email">
                     
                     <!-- Vnes za korisnichko ime -->
+                     <!-- username se dodekuva vo serverot-->
                     <label for="thq-sign-in-1-email" class="thq-body-large">
                       <span>Корисничко име</span>
                       <br />
@@ -93,6 +83,7 @@
                         Лозинка
                       </label>
                     </div>
+                    <!-- password se dodeluva na serverot-->
                     <input
                       type="password"
                       id="thq-sign-in-1-password"
@@ -106,7 +97,7 @@
                   <div class="sign-in1-container2">
                     <div class="sign-in1-container3">
                       
-                      <!-- Kopche za najava -->
+                      <!-- Kopche za najava gi dodeluva vnesenite podatoci vo serverot -->
                       <button
                         type="submit"
                         class="sign-in1-button thq-button-filled"
@@ -139,9 +130,8 @@
           </div>
         </div>
 
-        <!--Start Footer-->
+        <!-- Footer -->
         <%- include('footer') %>
-        <!--End Footer-->
 
       </div>
     </div>

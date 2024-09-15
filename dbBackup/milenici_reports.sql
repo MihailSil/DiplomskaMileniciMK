@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `milenici` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `milenici`;
 -- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
 --
 -- Host: localhost    Database: milenici
@@ -29,7 +27,7 @@ CREATE TABLE `reports` (
   `report_text` text,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +36,7 @@ CREATE TABLE `reports` (
 
 LOCK TABLES `reports` WRITE;
 /*!40000 ALTER TABLE `reports` DISABLE KEYS */;
-INSERT INTO `reports` VALUES (1,NULL,'2024-07-09 19:15:12'),(2,NULL,'2024-07-09 19:16:02'),(3,'Kreiraj Login','2024-07-10 16:59:53'),(4,'Креирај Логин','2024-07-10 17:00:15'),(5,'Креирај Регистер','2024-07-10 17:04:36'),(6,'Креирај Регистер','2024-07-10 17:04:48'),(7,'Фикс за репорт','2024-07-10 17:06:50'),(8,'Македонски алерт','2024-07-10 17:10:05'),(9,'Тест1','2024-07-10 17:16:17'),(10,'Тест2','2024-07-10 17:20:33'),(11,'Тест3','2024-07-10 17:22:48'),(12,'Тест 4','2024-07-11 17:04:47');
+INSERT INTO `reports` VALUES (1,NULL,'2024-07-09 19:15:12'),(2,NULL,'2024-07-09 19:16:02'),(3,'Kreiraj Login','2024-07-10 16:59:53'),(4,'Креирај Логин','2024-07-10 17:00:15'),(5,'Креирај Регистер','2024-07-10 17:04:36'),(6,'Креирај Регистер','2024-07-10 17:04:48'),(7,'Фикс за репорт','2024-07-10 17:06:50'),(8,'Македонски алерт','2024-07-10 17:10:05'),(9,'Тест1','2024-07-10 17:16:17'),(10,'Тест2','2024-07-10 17:20:33'),(11,'Тест3','2024-07-10 17:22:48'),(12,'Тест 4','2024-07-11 17:04:47'),(13,'ТестТест','2024-07-22 18:49:00'),(14,'РЕПОРТ','2024-07-26 17:41:00'),(15,'Pauesr stdr','2024-08-01 21:08:27'),(16,'Papgalot mi e nastinat, pomos!','2024-08-01 21:08:55'),(17,'репортрепорт','2024-08-09 22:45:32');
 /*!40000 ALTER TABLE `reports` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-22 19:36:54
+-- Dump completed on 2024-09-15 21:02:31

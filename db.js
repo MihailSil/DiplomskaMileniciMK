@@ -1,15 +1,16 @@
+// Paket za konekcija so MySql
 const mysql = require('mysql2');
 
-// Create a connection to the database
+// Konekcija so bazata na podatoci
 const connection = mysql.createConnection({
-  host: 'localhost',     // Your database host
-  user: 'root', // Your database user
-  password: 'root', // Your database password
-  database: 'milenici',  // Your database name
-  port: 3306
+  host: 'localhost',     // Host na bazata
+  user: 'root', // Ime na user na bazata
+  password: 'root', // Password na bazata
+  database: 'milenici',  // Ime na bazata
+  port: 3306 // Port za MySql
 });
 
-// Connect to the database
+// Pechatenje dali ima konekcija so bazata
 connection.connect((err) => {
   if (err) {
     console.error('Error connecting to the database:', err.stack);

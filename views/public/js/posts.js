@@ -1,22 +1,29 @@
+// Kreiranje post
+// Event listener na dugmeto
 document.getElementById('create-post-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    const formData = new FormData(this);
+  // Zemanje na podatocite
+  const formData = new FormData(this);
 
-    fetch('/create-post', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        alert('Огласот е успешно креиран!');
-        window.location.href = '/'; // Redirect to homepage or posts page
-      } else {
-        alert('Грешка при креирање на огласот: ' + data.message);
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
+  // Baranje do serverot za kreiranje post
+  fetch('/create-post', {
+    method: 'POST',
+    body: formData
+  })
+  // Povratni poraki od serverot
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      alert(data.message); // Ako e uspeshno
+      window.location.href = '/oglas'; // Nasoka do oglas
+    } else {
+      alert(data.message); // Vo sluchaj na greshka
+    }
+  })
+  // Greshka pri fetch
+  .catch(error => {
+    console.error('Error:', error);
+    alert('Грешка при креирање на огласот. Ве молиме обидете се повторно.');
   });
+});

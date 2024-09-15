@@ -4,10 +4,8 @@
     <!-- Meta tags, title, stylesheets, and other head content -->
     <link rel="icon" type="image/png" href="/public/Images/paw.png">
     <title>Header</title>
-    <meta property="og:title" content="Login - Standard Limited Sheep" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
 
     <!-- Styles -->
 
@@ -15,11 +13,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" data-tag="font" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
-    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+
     <link href="public/css/header.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- Start of Header-->
     <header data-thq="thq-navbar" class="home-navbar-interactive">
         <a href="/">
           <img
@@ -44,6 +41,12 @@
               <a href="/za-nas">
                   <span class="home-text03"><b>За нас</b></span>
               </a>
+              <!-- Vo sluchaj ako e admin se dodava Admin opcija -->
+              <% if (isAdmin) { %>
+                <a href="/admin">
+                    <span class="home-admintext"><b>Админ</b></span>
+                </a>
+              <% } %>
           </nav>
   
           <!--Opagjachko menu-->
@@ -51,10 +54,12 @@
               <div data-thq="thq-dropdown" class="home-thq-dropdown list-item">
                   <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle">
                       <span class="home-user">
+                        <!-- Ako e najaven korisnikot se vadi negovoto ime -->
                           <% if (isAuthenticated) { %>
                               <%= username %>
+                        <!-- Ako ne e najaven togash pishi Anonimen -->
                           <% } else { %>
-                              Anonymous
+                              Анонимен
                           <% } %>
                       </span>
                       <div data-thq="thq-dropdown-arrow" class="home-dropdown-arrow">
@@ -64,12 +69,14 @@
                       </div>
                   </div>
                   <ul data-thq="thq-dropdown-list" class="home-dropdown-list">
+                    <!-- Ako e najaven dropdown menito ima opcija Odjava -->
                       <% if (isAuthenticated) { %>
                         <li data-thq="thq-dropdown" class="home-dropdown list-item">
                           <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle1">
                             <button onclick="logout()" class="home-text05">Одјава</button>
                           </div>
                         </li>
+                        <!-- Ako ne e najaven ima opcija najava i register -->
                       <% } else { %>
                           <li data-thq="thq-dropdown" class="home-dropdown list-item">
                               <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle1">
@@ -97,7 +104,6 @@
           </div>
       </div>
       </header>
-    <!-- End of Header -->
 
     <script src="/public/js/logout.js"></script>
 </body>

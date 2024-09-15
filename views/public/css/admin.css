@@ -2,16 +2,28 @@
 .vdomi-container3 {
   display: flex;
   justify-content: center;
+  min-height: 80vh;
 }
 
 #post-list {
   list-style-type: none;
   padding: 0;
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
 }
 
-#post-list .list-item {
+#no-results {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center the text horizontally */
+  margin: 40px auto; /* Center the element itself */
+  font-size: 1.2em; /* Adjust the font size */
+  color: #f50e0e; /* Adjust the text color */
+  white-space: nowrap; /* Ensure text stays in one line */
+}
+
+#post-list .items {
   background-color: #f9f9f9;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -37,19 +49,19 @@
   margin: 10px 0;
 }
 
-#post-list .list-item img {
-  max-width: 600px; /* Double the width */
-  max-height: 600px; /* Double the height */
-  margin: 10px auto; /* Center the image horizontally */
-  display: block; /* Ensure image is a block element for centering */
+.items img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  display: block;
 }
 
-#post-list .list-item form {
+.items form {
   display: inline-block;
   margin: 10px 5px;
 }
 
-#post-list .list-item button {
+.items button {
   background-color: #ff6b6b;
   color: white;
   border: none;
@@ -58,6 +70,6 @@
   cursor: pointer;
 }
 
-#post-list .list-item button:hover {
+.items button:hover {
   background-color: #ff4c4c;
 }

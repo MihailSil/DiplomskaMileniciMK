@@ -1,21 +1,25 @@
+// odjava
+// se izvrshuva koga ke se povika
 function logout() {
-    fetch('/logout', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        // Redirect to the homepage or handle success
-        window.location.href = '/';
-      } else {
-        // Handle error
-        console.error('Logout failed:', data.message);
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-  }
+  // Baranje do serverot za odjava
+  fetch('/logout', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  // Povratni poraki od serverot
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      alert(data.message); //Ako e uspeshno
+      window.location.href = '/';
+    } else {
+      alert(data.message); // Vo sluchaj na greshka
+    }
+  })
+  // Greshka pri fetch
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}

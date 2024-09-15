@@ -6,10 +6,8 @@
     <link rel="icon" type="image/png" href="public/Images/paw.png">
     <title>MileniciMK</title>
 
-    <meta property="og:title" content="Standard Limited Sheep" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
 
     <style data-tag="reset-style-sheet">
       html { line-height: 1.15; }
@@ -49,36 +47,6 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         data-tag="font"
       />
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-      />
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-theme-neutral-dark);
-        background-color: var(--dl-color-theme-neutral-light);
-
-        fill: var(--dl-color-theme-neutral-dark);
-      }
-      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
-          display: flex;
-        }
-
-        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
-          transform: rotate(90deg);
-        }
-    </style>
         <link rel="stylesheet" href="public/css/index.css" />
         <link href="public/css/style.css" rel="stylesheet" />
   </head>
@@ -87,9 +55,8 @@
 
       <div class="home-container">
 
-        <!-- Start of Header-->
+        <!-- Header -->
         <%- include('header') %>
-        <!--End of Header-->
 
         <!--Start Prv del Vdomi mileniche-->
         <div class="thq-section-padding">
@@ -153,8 +120,8 @@
             </div>
             <img
               alt="AllPets"
-              src="public/Images/pets.png"
-              class="thq-img-ratio-16-9"
+              src="public/Images/homepets.png"
+              class=""
             />
           </div>
         </div>
@@ -181,19 +148,23 @@
               <div class="hero11-container1">
                 <img
                   alt="Слика на миленици"
-                  src="https://play.teleporthq.io/static/svg/default-img.svg"
-                  class="hero11-image1 thq-img-ratio-4-3"
+                  src="public/Images/adoptme.png"
+                  class="hero1-image1"
                 />
               </div>
             </div>
           </div>
           <div class="thq-section-padding">
             <div class="hero6-max-width thq-flex-row thq-section-max-width">
-              <img
-                alt="MobApp"
-                src="Images/mobapp1.jpg"
-                class="hero6-hero-image thq-img-ratio-4-3"
-              />
+              <video
+              class="hero6-hero-video"
+              controls
+              width="100%"
+              height="auto"
+            >
+              <source src="public/videos/WoofWoofBitolaVideo1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
               <div class="hero6-column">
                 <div class="hero6-content">
                   <p class="thq-body-large hero6-text">
@@ -228,8 +199,8 @@
                 <p class="hero81-text1 thq-body-large">
                   <span>
                     Придружете ни се на нашата веб страна, објавате оглас за
-                    вдомување милениче или вдомете милениче, поставете прашање
-                    или поставате одговор на некое прашање
+                    вдомување милениче или вдомете милениче, поднесете пофалба, жалба
+                    или идеја за подобрување 
                   </span>
                 </p>
                 <div class="hero81-actions">
@@ -252,9 +223,8 @@
         </div>
         <!--End Chetvrd del Pridruzi ni se-->
 
-        <!--Start Footer-->
+        <!-- Footer -->
         <%- include('footer') %>
-        <!--End Footer-->
 
       </div>
     </div>

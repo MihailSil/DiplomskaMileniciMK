@@ -173,20 +173,3 @@
 .sign-in1-text8 {
   text-align: center;
 }
-@media(max-width: 991px) {
-  .sign-in1-form-root {
-    width: 100%;
-    padding: var(--dl-space-space-fourunits);
-  }
-}
-@media(max-width: 479px) {
-  .sign-in1-form-root {
-    padding: var(--dl-space-space-oneandhalfunits);
-  }
-  .sign-in1-button {
-    width: 100%;
-  }
-  .sign-in1-button1 {
-    width: 100%;
-  }
-}

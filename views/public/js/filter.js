@@ -1,28 +1,32 @@
+// Filtriranje na postovi
+// event listener za izvrshuvanje na funkcija pri klik na kopcheto filter
 document.getElementById('filterButton').addEventListener('click', function() {
-  // Get the selected radio button value
+  // Zemanje na vrednosta
   const selectedType = document.querySelector('input[name="radio"]:checked').value;
 
-  // Get all posts
+  // Zemanje na site postovi
   const posts = document.querySelectorAll('.items');
 
-  // Variable to track if any posts are visible
+  // Promenliva za proverka dali ima dostapni postovi
   let anyVisible = false;
 
-  // Loop through each post and show/hide based on selected type
+  // Baranje niz sekoj post za tip na mileniche
   posts.forEach(post => {
     if (post.getAttribute('data-pet-type') === selectedType) {
+      // Ako e pronajden post sprema baraniot tip se prikazuva
       post.style.display = 'block';
       anyVisible = true;
     } else {
+      // Ako ne e pogoden ko krie
       post.style.display = 'none';
     }
   });
 
-  // Show or hide the "No results found" message based on visibility
+  // Prikazuvanje na tekstot nema rezultati
   const noResults = document.getElementById('no-results');
-  if (anyVisible) {
-    noResults.style.display = 'none';
+  if (noResults) {
+    noResults.style.display = anyVisible ? 'none' : 'block';
   } else {
-    noResults.style.display = 'block';
+    console.error('No results element not found');
   }
 });

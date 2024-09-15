@@ -3,11 +3,10 @@
   <head>
     <!--Naslov i logo-->
     <link rel="icon" type="image/png" href="/public/Images/paw.png">
-    <title>ZaNas</title>
+    <title>Vdomi</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
 
     <link
       rel="stylesheet"
@@ -28,19 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
       data-tag="font"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    />
-    <style>
-      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
-          display: flex;
-        }
 
-        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
-          transform: rotate(90deg);
-        }
-    </style>
     <link href="/public/css/vdomi.css" rel="stylesheet" />
     <link rel="stylesheet" href="/public/css/style.css" />
   </head>
@@ -49,12 +36,11 @@
 
       <div class="vdomi-container ">
 
-        <!-- Start of Header-->
+        <!-- Header -->
         <%- include('header') %>
-        <!--End of Header-->
 
         <div class="vdomi-container1 "></div>
-        <h1>Вдоми милениче</h1>
+        <h1 class="thq-heading-2">Вдоми милениче</h1>
         <span class="vdomi-text14">Тип на милениче</span>
         <div class="vdomi-container2">
           <input type="radio" name="radio" id="cat" value="Маче" class="vdomi-radiobutton" />
@@ -75,11 +61,14 @@
           </span>
         </button>
 
-        <!--Ova treba da bidi dinamichno-->
+        <!-- Vadenje na site oglasi -->
         <div class="vdomi-container3">
+          <!-- Kreiranje na lista za oglasite -->
           <ul id="post-list" class="list">
+            <!-- Ciklus za sekoj post -->
             <% posts.forEach(post => { %>
               <li class="items" data-pet-type="<%= post.pet_type %>">
+                <!-- Vadenje na sodrzinata na sekoj post -->
                 <div class="content">
                   <span><b>Име:</b> <%= post.name %></span>
                   <span><b>Телефон:</b> <%= post.phone %></span>
@@ -87,19 +76,17 @@
                   <span><b>Тип на милениче:</b> <%= post.pet_type %></span>
                   <span><b>Опис:</b> <%= post.description %></span>
                 </div>
-                <!-- Add more fields as needed -->
-                <img src="<%= post.picture %>" alt="Post Image"> <!-- Display the image -->
+                <img src="<%= post.picture %>" alt="Post Image"> 
               </li>
             <% }); %>
+              <!-- Ako nema rezultat -->
+              <p id="no-results" style="display: none;">Нема резултати</p>
           </ul>
-          <p id="no-results" style="display:none;">Нема резултати</p> <!-- No results message -->
         </div>
-          </ul>
-        </div>
+      </div>
 
-        <!--Start Footer-->
+        <!-- Footer -->
         <%- include('footer') %>
-        <!--End Footer-->
 
       </div>
     </div>

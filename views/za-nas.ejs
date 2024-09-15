@@ -5,49 +5,9 @@
     <link rel="icon" type="image/png" href="/public/Images/paw.png">
     <title>ZaNas</title>
     
-    <meta property="og:title" content="ZaNas - Standard Limited Sheep" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html { line-height: 1.15; }
-      body { margin: 0; }
-      * { box-sizing: border-box; border-width: 0; border-style: solid; }
-      p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption { margin: 0; padding: 0; }
-      button { background-color: transparent; }
-      button, input, optgroup, select, textarea { font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0; }
-      button, select { text-transform: none; }
-      button, [type="button"], [type="reset"], [type="submit"] { 
-      -webkit-appearance: button; 
-      appearance: button; 
-      }
-      button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
-      button:-moz-focus, [type="button"]:-moz-focus, [type="reset"]:-moz-focus, [type="submit"]:-moz-focus { outline: 1px dotted ButtonText; }
-      a { color: inherit; text-decoration: inherit; }
-      input { padding: 2px 4px; }
-      img { display: block; }
-      html { scroll-behavior: smooth; }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-theme-neutral-dark);
-        background-color: var(--dl-color-theme-neutral-light);
-
-        fill: var(--dl-color-theme-neutral-dark);
-      }
-    </style>
     <link
       rel="stylesheet"
       href="https://unpkg.com/animate.css@4.1.1/animate.css"
@@ -67,19 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
       data-tag="font"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    />
-    <style>
-      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
-          display: flex;
-        }
 
-        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
-          transform: rotate(90deg);
-        }
-    </style>
         <link rel="stylesheet" href="/public/css/style.css" />
         <link href="/public/css/za-nas.css" rel="stylesheet" />
         <link href="/public/css/header.css" rel="stylesheet" />
@@ -90,14 +38,13 @@
 
       <div class="za-nas-container">
         
-        <!-- Start of Header-->
+        <!-- Header -->
         <%- include('header') %>
-        <!--End of Header-->
 
         <div class="thq-section-padding">
           <div class="hero7-max-width thq-section-max-width">
             <div class="hero7-content">
-              <h1 class="hero7-text thq-heading-1"><span>За нас</span></h1>
+              <h1 class="hero7-text thq-heading-2"><span>За нас</span></h1>
               <p class="hero7-text1 thq-body-large">
                 <span>
                   Нашата цел е подобрување и забрзување на процесот на вдомување
@@ -115,8 +62,12 @@
         </div>
         <div class="contact-form11-contact11 thq-section-padding">
           <div class="contact-form11-content">
-           
-            <!--Fali slika za mail-->
+            <a href="mailto:siljanovski.mihail@uklo.edu.mk">
+              <img
+              alt="SendMail"
+              src="public/Images/mail.png"
+              />
+            </a>
             <div class="contact-form11-contact-info">
               <h3 class="thq-heading-3"><a href="mailto:siljanovski.mihail@uklo.edu.mk">Email</a></h3>
               <span class="contact-form11-email thq-body-small">
@@ -128,6 +79,7 @@
             <div class="contact-form11-content1">
               
               <!-- Forma za Reports -->
+              <!-- Podatocite se pushtat do /submit-report -->
               <form id="reportForm" class="contact-form11-form thq-card" method="POST" action="/submit-report">
                 <div class="contact-form11-input">
                   <label for="contact-form-11-message" class="thq-body-small">
@@ -180,29 +132,28 @@
               <div class="hero12-column1">
                 <img
                   alt="Hero Image"
-                  src="https://play.teleporthq.io/static/svg/default-img.svg"
-                  class="hero12-placeholder-image thq-img-ratio-1-1"
+                  src="public/Images/mobapp2.png"
+                  class="hero12-placeholder-image "
                 />
               </div>
               <div class="hero12-column2">
                 <img
                   alt="Hero Image"
-                  src="https://play.teleporthq.io/static/svg/default-img.svg"
-                  class="hero12-placeholder-image1 thq-img-ratio-1-1"
+                  src="public/Images/moblogo.png"
+                  class="hero12-placeholder-image1"
                 />
                 <img
                   alt="Hero Image"
-                  src="https://play.teleporthq.io/static/svg/default-img.svg"
-                  class="hero12-placeholder-image2 thq-img-ratio-1-1"
+                  src="public/Images/mobapp1.png"
+                  class="hero12-placeholder-image2"
                 />
               </div>
             </div>
           </div>
         </div>
 
-        <!--Start Footer-->
+        <!-- Footer -->
         <%- include('footer') %>
-        <!--End Footer-->
 
       </div>
     </div>
